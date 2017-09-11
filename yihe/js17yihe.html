@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .head{
+            width: 1180px ;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+        }
+        .site-nav{
+
+        }
+        .head-body{
+            width: 1180px;
+            height: 33px;
+            position: relative;
+            margin: 0 auto;
+            background: #eee;
+        }
+        .select-city{height: 33px;
+            line-height: 33px;
+            color: #666;
+            float: left
+        }
+        .quick-menu{
+            float: right;
+            padding-right: 10px;
+        }
+        .menu{
+            float: right;
+            padding-top: 5px;
+            padding-left: 10px;
+        }
+        .head-extra{
+            width: 1180px;
+            height: 80px;
+            padding: 27px 0 24px;
+            margin: 0 auto;
+        }
+      .logo{
+
+          margin-left: 50px;
+          float: left;
+      }
+      .search{
+          width: 498px;
+          height: 80px;
+          margin-left:340px ;
+
+      }
+        .search-class{
+            width: 100px;
+            /*display: block;*/
+            height: 25px;
+            overflow: hidden;
+            argin: 0;
+            padding: 0
+        }
+        .class1{
+            background: #008ce1;
+            color:#fff;
+            width: 50px;
+            height: 25px;
+            text-align: center;
+            float: left;
+            position: relative;
+        }
+        .class2{
+            background: white;
+            color: #666;
+            width: 50px;
+            height: 25px;
+            text-align: center;
+           padding-left: 50px;
+        }
+        .search-area{
+            height: 30px;
+            border: 2px solid #008CE1;
+            position:relative;
+
+        }
+        .word{
+            height: 24px;
+           width: 488px;
+           position: relative;
+        }
+        .hot-keywords{
+            position: relative;
+        }
+        .searchShop{
+            float: left;
+            height: 21px;
+            line-height: 25px;
+            margin: 0 10px 0 0;
+        }
+        .word2{
+            position: absolute;
+            right:110px;
+            top:95px;
+            float: right;
+            height: 35px;
+            width: 100px;
+           background: #f8f8f8;
+        }
+        .word3{
+            position: absolute;
+            right:5px;
+            top:95px;
+            float: right;
+            height: 35px;
+            width: 100px;
+            background:#f8f8f8;
+        }
+        .head-nav{
+            height: 44px;
+            width: 1180px;
+            /*border-bottom: 2px solid #018DE2;*/
+            position: relative;
+        }
+        .yunbo{
+            width: 1180px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        .itme {
+            float: left;
+            position: absolute;
+        }
+        .contain{
+            position: relative;
+        }
+        .left{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            height: 40px;
+            width:23px;
+            left: 0;
+            top: 50%;
+            background:rgba(0,0,0,0.6);
+            background-image: url("../../../YIHE/resource/yihe/right.png");
+            display: none;
+            opacity: 0.5;
+        }
+        .right{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            height: 40px;
+            width: 23px;
+            right: 0;
+            top: 50%;
+            background:rgba(0,0,0,0.6);
+            background-image: url("../../../YIHE/resource/yihe/left1.png");
+            display:none;
+            opacity: 0.5;
+        }
+        .yunbo:hover .left{
+            display:block;
+        }
+        .yunbo:hover .right{
+            display: block;
+        }
+        .lists{
+            border-radius: 7.5px;
+            width: 50px;
+            height: 10px;
+            background: rgba(127,127,127,0.7);
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -30px;
+        }
+        .list{
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+            float: left;
+        }
+        .img2{
+            width: 250px;
+        }
+        .center-jin{
+            margin-left: 80px;
+            overflow: hidden;
+        }
+        .jin-name{
+            height: 60px;
+            padding-top: 20px;
+            overflow: hidden;
+        }
+        .center-qiche{
+        height: 60px;
+        margin-left: 80px;
+        }
+
+        .img4{
+            height: 15px;
+            width: 15px;
+            margin: 1px 3px;
+
+        }
+        .center-qiche2{
+            height: 200px;
+            width: 240px;
+            /*background:rgba(127, 120, 127, 0.18);*/
+            float: left;
+            margin: 0px 3px 2px;
+        }
+      .lou{
+            width: 50px;
+            height: 500px;
+            border: 1px solid #b7b7b7;
+            position: fixed;
+            top: 50px;;
+            right: 40px;
+            background: #ffffff;
+            opacity:0;
+            transition:  all 2s;
+        }
+        .lous{
+
+            width: 50px;
+            height: 48px;;
+            border: 1px solid #b7b7b7;
+            text-align: center;
+            font-size: 130%;
+            color: #008CE1;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1" id="top">
+        <div class="head">
+            <div class="site-nav">
+                <div class="head-body">
+                    <div class="select-city">
+                        所在城市：<a>北京V</a>
+                    </div>
+                    <div class="quick-menu">
+                        <a class="menu" >☎️ 400-100-0907</a>
+                        <a class="menu">|</a>
+                        <a class="menu" >我是商家</a>
+                        <a class="menu">|</a>
+                        <a class="menu">我的消息</a>
+                        <a class="menu">|</a>
+                        <a class="menu">我的订单</a>
+                        <a class="menu">|</a>
+                        <a class="menu"  style="color: #ff841d">1703658746</a>
+                        <a class="menu">你好，</a>
+                    </div>
+                </div>
+                <div class="head-extra">
+                    <a href="/index" class="logo"><img src="../../../resource/yihe/logo.jpg" ></a>
+                    <div style="width: 100px;height: 80px;margin-left: 50px;float: left"></div>
+                    <div class="search">
+                        <div class="search-class">
+                            <div class="class1"><a>商家</a></div>
+                            <div class="class2">商品</div>
+                        </div>
+                        <div class="search-area">
+                            <input class="word" type="text" placeholder="请输入商家名称和关键字进行筛选"><input type="hidden"name="type">
+                            <button style="position: absolute;left:494px;top: -2px;background:#008CE1;width: 50px;height: 34px;font-size: 120%">🔍</button>
+                        </div>
+                        <div class="hot-keywords ">
+                            <div style="float: left">热门：</div>
+                            <div class="searchShop" style="display:block "><a search=烤肉">烤肉</a></div>
+                            <div class="searchShop" style="display:block "><a search=麻辣香锅">麻辣香锅</a></div>
+                            <div class="searchShop" style="display:block "><a >美发</a></div>
+                            <div class="searchGoods" style="display:none "><a >麻辣烫</a></div>
+                            <div class="searchGoods" style="display:none "><a >海鲜</a></div>
+                            <div class="searchGoods" style="display:none "><a >樱桃</a></div>
+                        </div>
+                    </div>
+                    <div class="word2">
+                        <div style="height: 30px;width: 100px;border: 1px solid #9bacc6;text-align: center;padding-top: 3px;float: left">
+                            <img src="../../../resource/yihe/c-1.png" style="margin-top: 3px">
+                            我的易和</div>
+                    </div>
+                    <div class="word3">
+                        <div style="height:30px;width: 100px;border: 1px solid #9bacc6;text-align: center;padding-top: 3px;float: left">
+                            <img src="../../../resource/yihe/购物车.png" style="margin-top: 3px;width: 20px;height: 20px">
+                            购物车
+                        </div>
+                    </div>
+                </div>
+                <div class="head-nav">
+                    <div class="v" style=float:left;color:#676767;font-size:120%;">
+                        <div class="allclass"style="position: absolute;left: 50px;border:2px solid #018DE2;background:#018DE2 ;color: white">行业分类 ></div>
+                        <div><a class="shouye"style="position: absolute;left: 200px">首页</a></div>
+                        <div><a  class="jingxuan"style="position: absolute;left: 350px">精选商家</a></div>
+                        <div><a class="tejia"style="position: absolute;left: 500px">今日特价</a></div>
+                        <div><a class="jifen1"style="position: absolute;left: 650px">积分商城</a></div>
+                        <div><a  class="join active"style="position: absolute;left: 800px">加入易和</a></div>
+                        <div class="online"style="position: absolute;left: 950px"><a >在线客服</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yunbo">
+            <div class="contain" style="left:-1180px; transition: all 1s;"  >
+                <div class="itme itmeBack" style="left: 0px">
+                    <img src="../../../resource/yihe/3.png" style="height: 400px;width: 1180px;">
+                </div>
+                <div class="itme itme1" style="left: 1180px">
+                    <img src="../../../resource/yihe/1.png" style="height: 400px;width: 1180px;">
+                </div>
+                <div class=" itme itme1"style="left: 2360px">
+                    <img src="../../../resource/yihe/2.png" style="height: 400px;width: 1180px;">
+                </div>
+                <div class="itme itme3"style="left:3540px">
+                    <img src="../../../resource/yihe/3.png" style="height: 400px;width: 1180px;">
+                </div>
+                <div class="itme itmeFirst"style="left:4720px">
+                    <img src="../../../resource/yihe/1.png" style="height: 400px;width: 1180px;">
+                </div>
+            </div>
+            <div class="left">
+            </div>
+            <div class="right">
+            </div>
+            <div class="lists">
+                <div class="list" style="background: #F40"></div>
+                <div class="list" style="margin:0 10px"></div>
+                <div class="list"></div>
+            </div>
+            <div class="fenlei" style="width: 99px;height:400px;position: absolute;
+            margin-left: 50px;background: black;opacity:0.3;display:none">
+            <div class="f1" style="height: 43px;padding-top:0px;text-align:center;color:#ffffff;border: 1px solid white">服装市场 ></div>
+            <div class="f2" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">建材装修 ></div>
+            <div class="f3" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">休闲娱乐 ></div>
+            <div class="f4" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">生活服务 ></div>
+            <div class="f5" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">3C市场 ></div>
+            <div class="f6" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">丽人 ></div>
+            <div class="f7" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">本地生活 ></div>
+            <div class="f8" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">购物 ></div>
+            <div class="f9" style="height: 43px;text-align:center;color:#ffffff;border: 1px solid white">电子数码 ></div>
+        </div>
+            <div class="kefu" style="width: 150px;height:200px;position: absolute;
+           margin-left:950px;background: #ffffff;display:none">
+                <div style="width: 130px;height: 40px;background: #ff7f05;text-align: center;color: white;border-radius: 20px;margin:5px 10px 5px">
+                    <img src="../../../resource/yihe/QQ.png" STYLE="width: 25px;height:25px">
+                    QQ客服1
+                </div>
+                <div style="width: 130px;height: 40px;background: #ff7f05;text-align: center;color: white;border-radius: 20px;margin:5px 10px 5px">
+                    <img src="../../../resource/yihe/QQ.png" STYLE="width: 25px;height:25px">
+                    QQ客服1
+                </div>
+
+                <div>
+                    <img src="../../../resource/yihe/二维码1.png" STYLE="width: 130px;height:100px;margin-left: 10px">
+                </div>
+            </div>
+            <div class="f-1"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-2"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-3"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-4"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-5"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-6"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-7"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-8"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+            <div class="f-9"style="width: 300px;height:400px;position: absolute;color: white;
+            margin-left:150px;background: black;opacity:0.3;display:none">
+                <div style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+                <div  style="margin:20px 50px"><span>手机商家</span> <span>电脑配件</span></div>
+                <div  style="margin:20px 50px"><span>智能生活</span> <span>个体保健</span></div>
+            </div>
+
+        </div>
+        <div class="center1"style="margin-left: 90px;margin-top: 5px">
+            <img src="../../../resource/yihe/当红好店.png" class="img2">
+            <img src="../../../resource/yihe/复古风.png" class="img2">
+            <img src="../../../resource/yihe/男装馆.png" class="img2">
+            <img src="../../../resource/yihe/美妆馆.png" class="img2">
+        </div>
+        <div class="center-jin">
+            <div class="jin-name">
+                <div style="float: left; color: #FE6E00;font-size: 30px">精选</div>
+                <div style="float: left;color: #008CE1;font-size: 30px">品牌</div>
+                <div style="float: left;color: #666;font-size: 16px;padding-top: 14px;padding-left:4px">Brand select</div>
+            </div>
+        </div>
+        <div class="center-line" style="width: 1180px;height: 2px;background:#008CE1"></div>
+        <div class="center-jin1"style="height: 315px;margin-bottom: 2px">
+            <div style="margin-left: 80px;margin-top: 10px;float: left">
+                <img src="../../../resource/yihe/x1.jpg" class="img2" style="width: 240px;height: 305px">
+            </div>
+            <div style=" float: left;overflow: hidden">
+                <img src="../../../resource/yihe/x2.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x3.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x4.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x5.jpg" class="img2" style="width: 180px">
+                <div>
+                <img src="../../../resource/yihe/x6.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x7.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x8.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x9.jpg" class="img2" style="width: 180px">
+                </div>
+                <div>
+                <img src="../../../resource/yihe/x10.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x11.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x12.jpg" class="img2" style="width: 180px">
+                <img src="../../../resource/yihe/x13.jpg" class="img2" style="width: 180px">
+                </div>
+            </div>
+        </div>
+        <div class="center-qiche">
+            <div style="font-size:15px;color: white">h</div>
+            <img src="../../../resource/yihe/botton1.png" style="width: 30px;height: 30px;float: left">
+            <div style="font-size: 25px;left: 80px;color: #008CE1;float: left;font-size: 120%">汽车装饰</div>
+            <div class="l1" style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 120px;font-size: 120%">爆款推荐</div>
+            <div class="l2" style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 70px;font-size: 120%">精品女装</div>
+            <div class="l3" style="font-size: 25px;left: 80px;color: #666;float: left;padding-left: 70px;font-size: 120%">精品男装</div>
+        </div>
+        <div class="center-line" style="width: 1180px;height: 2px;background:#008CE1">
+            <div class="line1"style="width: 100px;height: 2px;background:#e19a21;margin-left: 300px;display: none"></div>
+            <div class="line2"style="width: 100px;height: 2px;background:#e19a21;margin-left: 450px;display: none;margin-top: -2px"></div>
+            <div class="line3"style="width: 100px;height: 2px;background:#e19a21;margin-left: 600px;display: none;margin-top: -2px"></div>
+        </div>
+        <div class="center-qiche1"style="height: 425px;margin-bottom: 2px">
+            <div style="margin-left: 80px;margin-top: 10px;float: left">
+                <img src="../../../resource/yihe/c1.jpg" class="img2" style="width: 240px;height: 400px;">
+
+            </div>
+            <div style=" float: left;overflow: hidden;margin-top: 10px">
+                <div class="center-qiche2" style="position: relative">
+                    <img src="../../../resource/yihe/c2.jpg" class="q1" style="height: 125px;width: 240px;">
+                    <img src="../../../resource/yihe/qiche1.png" class="qiche1" style="width: 240px;height: 20px;position: absolute;top: 105px;display: none">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2"style="position: relative">
+                    <img src="../../../resource/yihe/c3.jpg" class="q1" style="height: 125px;width: 240px">
+                    <img src="../../../resource/yihe/qiche1.png" class="qiche1" style="width: 240px;height: 20px;position: absolute;top: 105px;display: none">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2"style="position: relative">
+                    <img src="../../../resource/yihe/c4.jpg" class="q1" style="height: 125px;width: 240px">
+                    <img src="../../../resource/yihe/qiche1.png" class="qiche1" style="width: 240px;height: 20px;position: absolute;top: 105px;display: none">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+            <div style=" float: left;overflow: hidden;">
+                <div class="center-qiche2"style="position: relative" >
+                    <img src="../../../resource/yihe/c5.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <img src="../../../resource/yihe/qiche1.png" class="qiche1" style="width: 240px;height: 20px;position: absolute;top: 105px;display: none">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/c6.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/c7.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="../../../resource/yihe/footer3.jpg">
+        </div>
+        <div class="center-qiche">
+            <div style="font-size:15px;color: white">h</div>
+            <img src="../../../resource/yihe/botton1.png" style="width: 30px;height: 30px;float: left">
+            <div style="font-size: 25px;left: 80px;color: #008CE1;float: left;font-size: 120%">汽车装饰</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 120px;font-size: 120%">爆款推荐</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 70px;font-size: 120%">精品女装</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;padding-left: 70px;font-size: 120%">精品男装</div>
+        </div>
+        <div class="center-line" style="width: 1180px;height: 2px;background:#008CE1"></div>
+        <div class="center-jiudian"style="height: 425px;margin-bottom: 2px">
+            <div style="margin-left: 80px;margin-top: 10px;float: left">
+                <img src="../../../resource/yihe/p1.jpg" class="img2" style="width: 240px;height: 400px">
+            </div>
+            <div style=" float: left;overflow: hidden;margin-top: 10px">
+                <div class="center-qiche2" >
+                    <img src="../../../resource/yihe/p2.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/p3.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/p4.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+            <div style=" float: left;overflow: hidden;">
+                <div class="center-qiche2" >
+                    <img src="../../../resource/yihe/p5.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/p6.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/p7.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="../../../resource/yihe/footer2.jpg">
+        </div>
+        <div class="center-qiche">
+            <div style="font-size:15px;color: white">h</div>
+            <img src="../../../resource/yihe/c-1.png" style="width: 30px;height: 30px;float: left">
+            <div style="font-size: 25px;left: 80px;color: #008CE1;float: left;font-size: 120%">男装</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 120px;font-size: 120%">爆款推荐</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 70px;font-size: 120%">精品女装</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;padding-left: 70px;font-size: 120%">精品男装</div>
+        </div>
+        <div class="center-line" style="width: 1180px;height: 2px;background:#008CE1"></div>
+        <div class="center-nanzhuang"style="height: 425px;margin-bottom: 2px">
+            <div style="margin-left: 80px;margin-top: 10px;float: left">
+                <img src="../../../resource/yihe/n1.jpg" class="img2" style="width: 240px;height: 400px">
+            </div>
+            <div style=" float: left;overflow: hidden;margin-top: 10px">
+                <div class="center-qiche2" >
+                    <img src="../../../resource/yihe/n2.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/n3.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/n4.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+            <div style=" float: left;overflow: hidden;">
+                <div class="center-qiche2" >
+                    <img src="../../../resource/yihe/n5.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/n6.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/n7.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="../../../resource/yihe/footer1.jpg">
+        </div>
+        <div class="center-qiche">
+            <div style="font-size:15px;color: white">h</div>
+            <img src="../../../resource/yihe/c-1.png" style="width: 30px;height: 30px;float: left">
+            <div style="font-size: 25px;left: 80px;color: #008CE1;float: left;font-size: 120%">建材</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 120px;font-size: 120%">爆款推荐</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;margin-left: 70px;font-size: 120%">精品女装</div>
+            <div style="font-size: 25px;left: 80px;color: #666;float: left;padding-left: 70px;font-size: 120%">精品男装</div>
+        </div>
+        <div class="center-line" style="width: 1180px;height: 2px;background:#008CE1"></div>
+        <div class="center-jiancai"style="height: 425px;margin-bottom: 2px">
+            <div style="margin-left: 80px;margin-top: 10px;float: left">
+                <img src="../../../resource/yihe/j1.jpg" class="img2" style="width: 240px;height: 400px">
+            </div>
+            <div style=" float: left;overflow: hidden;margin-top: 10px">
+                <div class="center-qiche2" >
+                    <img src="../../../resource/yihe/j2.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/j3.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../YIHE/resource/yihe/n-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/j4.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+            <div style=" float: left;overflow: hidden;">
+                <div class="center-qiche2" >
+                    <img src="../../../resource/yihe/j5.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/j6.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+                <div class="center-qiche2">
+                    <img src="../../../resource/yihe/j7.jpg" class="img2;" style="height: 125px;width: 240px">
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-1.png" class="img4">
+                        张杰
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-3.png" class="img4">
+                        18956488964
+                    </div>
+                    <div style="color: #525252">
+                        <img src="../../../resource/yihe/c-2.png" class="img4">
+                        浙江省台州市温岭市人名西路
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="../../../resource/yihe/footer.jpg">
+        </div>
+        <div class="v" style="width: 1180px;height: 70px;background: rgba(127,127,127,0.35)">
+                <div style="float: left;margin:10px 50px 10px 80px  ">
+                    <img src="../../../resource/yihe/botton.png">
+                    正品保障</div>
+                <div style="float: left;margin:10px 50px 10px ">
+                    <img src="../../../resource/yihe/botton2.png">
+                    全程跟踪</div>
+                <div style="float: left;margin:10px 50px 10px">
+                    <img src="../../../resource/yihe/botton2.png">
+                    客户监督</div>
+                <div style="float: left;margin:10px 50px 10px">
+                    <img src="../../../resource/yihe/botton3.png">
+                    售后无忧</div>
+                <div style="float: left;margin:10px 50px 10px">
+                    <img src="../../../resource/yihe/botton4.png">
+                    准时到达</div>
+        </div>
+        <div class="v" style="width: 1180px;">
+            <div style="float: left;margin:30px 20px 10px 80px  ">
+                <img src="../../../resource/yihe/底部易和图标.png" style="width: 150px;height: 100px ">
+                </div>
+            <div style="float: left;margin:10px 15px 10px ">
+                <div><img src="../../../resource/yihe/二维码1.png"></div>
+                <img src="../../../resource/yihe/二维码1微信.png" style="margin-left: 20px">
+                官方微信
+            </div>
+
+            <div style="float: left;margin:10px 15px 10px">
+                <div><img src="../../../resource/yihe/二维码2.png"></div>
+                <img src="../../../resource/yihe/二维码2手机.png" style="margin-left: 20px">
+                APP下载
+                </div>
+            <div style="float: left;margin:20px 15px 10px">
+                <div style="font-size: 120%;font-weight:bold;">关于易和</div>
+                <div>新用户注册</div>
+                <div>在线下单</div>
+                <div>支付方式</div>
+            </div>
+            <div style="float: left;margin:20px 15px 10px">
+                <div style="font-size: 120%;font-weight:bold;">配送说明</div>
+                <div>运费说明</div>
+                <div>发展方式</div>
+                <div>发展说明</div>
+            </div>
+            <div style="float: left;margin:20px 15px 10px">
+                <div style="font-size: 120%;font-weight:bold;">售后服务</div>
+                <div>退换货规则</div>
+                <div>服务保障承诺</div>
+                <div>验货和签收</div>
+            </div>
+            <div style="float: left;margin:20px 15px 10px">
+                <div style="font-size: 120%;font-weight:bold;">加盟易和</div>
+                <div>加盟条款</div>
+                <div>公司简介</div>
+                <div>服务协议</div>
+            </div>
+        </div>
+        </div>
+        <div class="lou">
+            <div class="lous lou-1">1F</div>
+            <div class="lous lou-2">2F</div>
+            <div class="lous lou-3">3F</div>
+            <div class="lous lou-4">4F</div>
+            <div class="lous lou-5">5F</div>
+            <div class="lous lou-6">6F</div>
+            <div class="lous lou-7">7F</div>
+            <div class="lous lou-8">8F</div>
+            <div class="lous lou-9">9F</div>
+            <div class="lous lou-10">顶部</div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var lou=document.getElementsByClassName("lou")[0]
+    var lous=document.getElementsByClassName("lou-10")[0]
+    var line1=document.getElementsByClassName("line1")[0];
+    var line2=document.getElementsByClassName("line2")[0];
+    var line3=document.getElementsByClassName("line3")[0];
+    var l1=document.getElementsByClassName("l1")[0];
+    var l2=document.getElementsByClassName("l2")[0];
+    var l3=document.getElementsByClassName("l3")[0];
+    var q1=document.getElementsByClassName("q1");
+    var qiche1=document.getElementsByClassName("qiche1");
+    var online=document.getElementsByClassName("online")[0];
+    var kefu=document.getElementsByClassName("kefu")[0];
+    var f1=document.getElementsByClassName("f1")[0];
+    var ff1=document.getElementsByClassName("f-1")[0];
+    var f2=document.getElementsByClassName("f2")[0];
+    var ff2=document.getElementsByClassName("f-2")[0];
+    var f3=document.getElementsByClassName("f3")[0];
+    var ff3=document.getElementsByClassName("f-3")[0];
+    var f4=document.getElementsByClassName("f4")[0];
+    var ff4=document.getElementsByClassName("f-4")[0];
+    var f5=document.getElementsByClassName("f5")[0];
+    var ff5=document.getElementsByClassName("f-5")[0];
+    var f6=document.getElementsByClassName("f6")[0];
+    var ff6=document.getElementsByClassName("f-6")[0];
+    var f7=document.getElementsByClassName("f7")[0];
+    var ff7=document.getElementsByClassName("f-7")[0];
+    var f8=document.getElementsByClassName("f8")[0];
+    var ff8=document.getElementsByClassName("f-8")[0];
+    var f9=document.getElementsByClassName("f9")[0];
+    var ff9=document.getElementsByClassName("f-9")[0];
+    var fenlei=document.getElementsByClassName("fenlei")[0];
+    var all=document.getElementsByClassName("allclass")[0];
+    var yunbo=document.getElementsByClassName("yunbo")[0];
+    var left = document.getElementsByClassName("left")[0];
+    var right = document.getElementsByClassName("right")[0];
+    var contain=document.getElementsByClassName("contain")[0];
+    var list=document.getElementsByClassName("list");
+
+    document.addEventListener("mousewheel",function () {
+        console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop>700){
+            lou.style.opacity="1";
+        }else{
+            lou.style.opacity="0";
+        }
+    });
+    lous.onclick=function () {
+        document.documentElement.scrollTop="0"
+//        console.log("结果"+document.documentElement.scrollTop);
+    }
+
+    var num1=2;
+    function moveImg() {
+        contain.style.transition="all 1s";
+        var left=contain.style.left;
+        left=left.substring(left.length-2,-1)
+        if(left=="-4720"){
+            left="0";
+            contain.style.transition="";
+            setTimeout(function () {
+                moveImg();
+            },50);
+        } contain.style.left=left-1180+"px";
+        if(left!=-1180){
+            for (var i=0;i<list.length;i++){
+                list[i].style.background="#B7B7B7";
+            };
+            console.log(num1);
+            if (num1>=list.length){
+                num1=0;
+            }
+            list[num1].style.background="#F40";
+            num1++;
+        }
+    }
+
+    var num=setInterval(moveImg,2000);
+    function  clearTime() {
+        clearInterval(num)
+    }
+    yunbo.onmousemove=function () {
+        console.log("heihei")
+        clearTime();
+    }
+    yunbo.onmouseout=function () {
+        console.log("11")
+        num=setInterval(moveImg,2000);
+    }
+
+
+    for(var i=0;i<q1.length;i++) {
+        console.log(i);
+        q1[i].onmouseenter = function(i){
+            return function () {
+                qiche1[i].style.display = "block";
+            }
+        }
+        (i);
+    }
+    for(var i=0;i<q1.length;i++) {
+        console.log(i);
+        q1[i].onmouseleave= function(i){
+            return function () {
+                qiche1[i].style.display = "none";
+            }
+        }
+        (i);
+    }
+    l1.onmouseleave=function () {
+        line1.style.display="none";
+    }
+    l1.onmouseenter=function () {
+        line1.style.display="block";
+    }
+    l2.onmouseleave=function () {
+        line2.style.display="none";
+    }
+    l2.onmouseenter=function () {
+        line2.style.display="block";
+    }
+    l3.onmouseleave=function () {
+        line3.style.display="none";
+    }
+    l3.onmouseenter=function () {
+        line3.style.display="block";
+    }
+
+    q1.onmouseleave=function () {
+        qiche1.style.display="none";
+    }
+   all.onmouseenter=function () {
+      fenlei.style.display="block";
+    }
+    fenlei.onmouseleave=function () {
+        fenlei.style.display="none";
+    }
+    yunbo.onmouseleave=function () {
+        fenlei.style.display="none";
+    }
+    f1.onmouseenter=function () {
+        ff1.style.display="block"
+    }
+    f2.onmouseenter=function () {
+      ff2.style.display="block"
+    }
+    f3.onmouseenter=function () {
+        ff3.style.display="block"
+    }
+    f4.onmouseenter=function () {
+        ff4.style.display="block"
+    }
+    f5.onmouseenter=function () {
+        ff5.style.display="block"
+    };
+    f6.onmouseenter=function () {
+        ff6.style.display="block"
+    }
+    f7.onmouseenter=function () {
+        ff7.style.display="block"
+    }
+    f8.onmouseenter=function () {
+        ff8.style.display="block"
+    }
+    f9.onmouseenter=function () {
+        ff9.style.display="block"
+    }
+    f1.onmouseleave=function () {
+        ff1.style.display="none"
+    }
+    f2.onmouseleave=function () {
+        ff2.style.display="none"
+    }
+    f3.onmouseleave=function () {
+        ff3.style.display="none"
+    }
+    f4.onmouseleave=function () {
+        ff4.style.display="none"
+    }
+    f5.onmouseleave=function () {
+        ff5.style.display="none"
+    }
+    f6.onmouseleave=function () {
+        ff6.style.display="none"
+    }
+    f7.onmouseleave=function () {
+        ff7.style.display="none"
+    }
+    f8.onmouseleave=function () {
+        ff8.style.display="none"
+    }
+    f9.onmouseleave=function () {
+        ff9.style.display="none"
+    }
+    online.onmouseenter=function () {
+        kefu.style.display="block";
+
+    }
+    online.onmouseleave=function () {
+        kefu.style.display="none";
+    }
+
+
+
+
+
+</script>
+</html>
